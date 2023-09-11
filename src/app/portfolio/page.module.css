@@ -1,0 +1,87 @@
+.mainTitle {
+    font-size: 100px;
+}
+
+.selectTitle {
+    margin: 20px 0;
+}
+
+.items {
+    display: flex;
+    gap: 50px;
+}
+
+.item {
+    border-radius: 5px;
+    border: 5px solid #bbb;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.item:hover .title {
+    color: #53c28b;
+    transition: .4s ease-in-out;
+}
+
+.item:nth-child(1) {
+    background: url('/illustration.png');
+}
+
+.item:nth-child(2) {
+    background: url('/websites.jpg');
+}
+
+.item:nth-child(3) {
+    background: url('/apps.jpg');
+}
+
+.title {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 25px;
+    color: #bbb;
+    font-weight: 600;
+}
+
+.cTitle {
+    font-size: 25px;
+    color: #53c28b;
+    text-transform: capitalize;
+}
+
+.CategoryItems {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 20px 0;
+}
+
+.CategoryItems:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.cContent {
+    flex: 1;
+}
+
+.cContent h3 {
+    font-size: 34px;
+}
+
+.cContent p {
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.cImg {
+    flex: 1;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.imgItem {
+    object-fit: cover;
+}
